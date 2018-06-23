@@ -1,0 +1,28 @@
+{
+    "name": "web-server",
+    "version": "1.0.0",
+    "description": "Node web server",
+    "main": "app.js",
+    "scripts": {
+        "start": "nodemon"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/mateusz-bielak/node-web-server.git"
+    },
+    "license": "ISC",
+    "dependencies": {
+        "express": "^4.16.3",
+        "request": "^2.87.0",
+        "request-promise": "^4.2.2",
+        "yargs": "^11.0.0"
+    },
+    "devDependencies": {
+        "eslint": "^5.0.0",
+        "eslint-config-airbnb-base": "^13.0.0",
+        "eslint-config-prettier": "^2.9.0",
+        "eslint-plugin-import": "^2.12.0",
+        "nodemon": "^1.17.5",
+        "prettier": "^1.13.5"
+    }
+}

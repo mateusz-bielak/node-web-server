@@ -1,0 +1,25 @@
+{
+    "extends": ["airbnb", "prettier"],
+    "parserOptions": {
+        "ecmaVersion": 9
+    },
+    "env": {
+        "es6": true,
+        "node": true
+    },
+    "rules": {
+        "arrow-parens": [0, "as-needed"],
+        "max-len": [0, { "code": 100 }],
+        "no-shadow": 2,
+        "quotes": [2, "single", { "avoidEscape": true }],
+
+        "comma-dangle": 0,
+        "eol-last": 0,
+        "no-console": 0,
+        "no-multiple-empty-lines": 0,
+        "no-trailing-spaces": 0,
+        "object-curly-spacing": 0,
+        "padded-blocks": 0,
+        "semi": 0
+    }
+}
