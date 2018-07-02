@@ -9,18 +9,20 @@ app.set('view engine', 'hbs');
 
 app.use(express.static(path.join(__dirname, 'public')));
 
+hbs.registerHelper('getCurrentYear', () => new Date().getFullYear());
+
+hbs.registerHelper('makeUpperCase', text => text.toUpperCase());
+
 app.get('/', (request, response) =>
     response.render('home.hbs', {
         pageTitle: 'Home Page',
         welcomeMessage: 'Welcome to my website!',
-        currentYear: new Date().getFullYear(),
     }),
 );
 
 app.get('/about', (request, response) =>
     response.render('about.hbs', {
         pageTitle: 'About Page',
-        currentYear: new Date().getFullYear(),
     }),
 );
 

@@ -10,8 +10,8 @@
 
 
 <body>
-    <h1>{{pageTitle}}</h1>
-    <p>{{welcomeMessage}}</p>
+    {{> header}}
+    <p>{{makeUpperCase welcomeMessage}}</p>
 
     {{> footer}}
 </body>
