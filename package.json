@@ -4,7 +4,8 @@
     "description": "Node web server",
     "main": "app.js",
     "scripts": {
-        "start": "nodemon server.js -e js,hbs"
+        "start": "node server.js",
+        "nodemon": "nodemon server.js -e js,hbs"
     },
     "repository": {
         "type": "git",
